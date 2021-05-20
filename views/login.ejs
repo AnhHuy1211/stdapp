@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css"
+          integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-login bg-local bg-opacity-25 si-bg">
+        <nav class="grid grid-cols-12 grid-rows-1 gap-2 h-20 min-w-full absolute">
+            <div class="shadow-xl lg:col-start-2 lg:col-span-4 col-start-1 col-span-12 px-2 lg:text-4xl text-2xl text-white bg-gradient-to-r from-green-400 via-blue-400 via-indigo-500 to-purple-500 text-center flex flex-row justify-center items-center">
+                <i class="fas fa-university fa-2x"></i>
+                <h2 class="inline font-semibold pl-3 flex flex-col">
+                    <span class="text-3xl">Student's Portal</span>
+                    <span class="inline text-sm tracking-widest">Ton Duc Thang University</span>
+                </h2>
+            </div>
+        </nav>
+        <div class="min-h-screen max-w-max m-auto sm:w-full flex items-center justify-center">
+            <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:grid-rows-1 sm:grid-rows-2 lg:pl-80">
+                <div class="grid lg:grid-cols-5 lg:grid-rows-1 sm:grid-cols-1 sm:grid-rows-2">
+                    <div class="lg:col-start-2 lg:col-span-3 flex items-center justify-end">
+                       <a href="../auth/google" class="border-2 shadow-md hover:shadow-xl bg-white flex-initial flex-row min-w-max m-4 px-10 py-1.5">
+                            <img class="inline w-6 h-6 mr-4" src='https://img.icons8.com/fluent/48/000000/google-logo.png'>
+                            <span>Sign in with Google for students</span>
+                        </a>
+                    </div>
+                    <div class="lg:col-start-5 flex items-center justify-center"><span class="text-white text-2xl font-bold">Or</span></div>
+                </div>
+                <div>
+                    <div class="lg:pr-20">
+                        <form method="post">
+                            <fieldset class="border-2 shadow-xl bg-white">
+                                <legend class="ml-8 font-semibold bg-indigo-500 text-white lg:px-8 lg:py-1">Sign in with email</legend>
+                                <div class="px-10 py-6 min-w-full max-w-xl">
+                                    <div class="grid grid-cols-3">
+                                        <div class="col-span-3">
+                                            <label class="font-semibold text-base" for="si-email">Email</label>
+                                            <input class="appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                                   type="text" id="si-email" name="lemail" placeholder="Email"/>
+                                        </div>
+                                        <div class="col-span-3">
+                                            <label class="font-semibold text-base" for="si-password">Password</label>
+                                            <input class="appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                                   type="password" id="si-password" name="lpass" placeholder="Password"/>
+                                        </div>
+                                        <div class="col-span-3 mt-2">
+                                            <input type="checkbox" id="si-remember" name="remember">
+                                            <label class="text-base" for="si-remember">Remember me</label>
+                                        </div>
+                                        <%if(typeof message !== 'undefined') {%>
+                                        <div class="col-span-3 text-red-500 mt-4"><%-message%></div>
+                                        <%}%>
+                                        <div class="col-start-3 mt-2">
+                                            <button class="w-full h-10 flex items-center justify-center py-2 px-4 border-transparent text-sm font-medium text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+                                                    type="submit">Sign in</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

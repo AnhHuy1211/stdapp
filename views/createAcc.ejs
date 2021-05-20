@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css"
+          integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script rel="script" src="../public/javascripts/main.js"></script>
+    <title>Create account</title>
+</head>
+<body>
+<div class="bg-local bg-opacity-25 si-bg">
+    <nav class="grid grid-cols-12 grid-rows-1 gap-2 h-20 min-w-full absolute">
+        <div class="shadow-xl lg:col-start-2 lg:col-span-4 col-start-1 col-span-12 px-2 lg:text-4xl text-2xl text-white bg-gradient-to-r from-green-400 via-blue-400 via-indigo-500 to-purple-500 text-center flex flex-row justify-center items-center">
+            <i class="fas fa-university fa-2x"></i>
+            <h2 class="inline font-semibold pl-3 flex flex-col">
+                <span class="text-3xl">Student's Portal</span>
+                <span class="inline text-sm tracking-widest">Ton Duc Thang University</span>
+            </h2>
+        </div>
+    </nav>
+    <div class="container min-w-full min-h-screen flex flex-col justify-center items-center">
+        <div class="grid grid-cols-11 grid-rows-12 min-h-full pt-20 lg:pt-34">
+            <div class="lg:col-start-4 lg:col-span-5 row-start-5 col-span-12">
+                <form method="post">
+                    <fieldset class="border-2 bg-white shadow-xl">
+                        <legend class="ml-8 font-semibold bg-indigo-500 text-white px-8 py-1">Create account</legend>
+                        <div class="grid grid-cols-4 grid-flow-row auto-rows-max flex flex-col lg:gap-x-4 lg:gap-y-2  px-10 py-6">
+                            <div class="row-start-1 col-span-2">
+                                <label class="font-semibold" for="fname">First name<span class="text-red-500">*</span></label>
+                                <input class="appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                       type="text" id="fname" name="cfname" placeholder="First name">
+                            </div>
+                            <div class="row-start-1 col-start-3 col-span-2">
+                                <label class="font-semibold" for="lname">Last name<span class="text-red-500">*</span></label>
+                                <input class="appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                       type="text" id="lname" name="clname" placeholder="Last name">
+                            </div>
+                            <div class="row-start-2 col-span-4">
+                                <label class="font-semibold" for="email">Email<span class="text-red-500">*</span></label>
+                                <input class="appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                       type="email" id="email" name="cemail" placeholder="Email">
+                            </div>
+                            <div class="row-start-3 col-span-4">
+                                <label class="font-semibold" for="faculty">Departments<span class="text-red-500">*</span></label>
+                                <select class="relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                        id="faculty" name="cdepartments">
+                                    <option selected>Select your departments</option>
+                                    <option value="Department of Student affairs">Department of Student affairs</option>
+                                    <option value="Department of Undergraduate Studies">Department of Undergraduate Studies</option>
+                                    <option value="Department of Graduate Studies">Department of Graduate Studies</option>
+                                    <option value="Department for Computing and Computer services">Department for Computing and Computer services</option>
+                                    <option value="Department for Management of Science and Technology Development">Department for Management of Science and Technology Development</option>
+                                    <option value="Department of Testing & Quality Assessment">Department of Testing and Quality Assessment</option>
+                                    <option value="Department for Facility Management">Department for Facility Management</option>
+                                    <option value="Foreign Languages">Creative Language Center</option>
+                                    <option value="Department for Finance">Department for Finance</option>
+                                    <option value="Department for Personnel and Administrative Affairs">Department for Personnel and Administrative Affairs</option>
+                                    <option value="Department for Inspection, Legislation and Security">Department for Inspection, Legislation and Security</option>
+                                    <option value="Department for Communication and Public Relation">Department for Communication and Public Relation</option>
+                                    <option value="Inspire Library">Inspire Library</option>
+                                    <option value="Accounting">Accounting</option>
+                                    <option value="Applied Sciences">Applied Sciences</option>
+                                    <option value="Business Administration">Business Administration</option>
+                                    <option value="Civil Engineering">Civil Engineering</option>
+                                    <option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering</option>
+                                    <option value="Environment and Labour Safety">Environment and Labour Safety</option>
+                                    <option value="Finance and Banking">Finance and Banking</option>
+                                    <option value="Foreign Languages">Foreign Languages</option>
+                                    <option value="Industrial Fine Arts">Industrial Fine Arts</option>
+                                    <option value="Information Technology">Information Technology</option>
+                                    <option value="International Studies">International Studies</option>
+                                    <option value="Labor Relations and Trade Unions">Labor Relations and Trade Unions</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Mathematics and Statistics">Mathematics and Statistics</option>
+                                    <option value="Pharmacy">Pharmacy</option>
+                                    <option value="Social Sciences and Humanities">Social Sciences and Humanities</option>
+                                    <option value="Sport Science">Sport Science</option>
+
+                                </select>
+                            </div>
+                            <div class=" row-start-4  col-span-2">
+                                <label class="font-semibold" for="phone">Phone number</label>
+                                <input class="appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                       type="text" id="phone" name="cphone" placeholder="Phone number">
+                            </div>
+                            <div class="col-start-3 row-start-4 col-span-2">
+                                <label class="font-semibold" for="dateob">Date of birth</label>
+                                <input class="appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                       type="date" id="dateob" name="cdateob" placeholder="Date of birth">
+                                <input class="hidden" type="text" name="crole" value="teacher">
+                            </div>
+                            <div class="row-start-5 col-span-4">
+                                <label class="font-semibold" for="pass">Password<span class="text-red-500">*</span></label>
+                                <div class="grid grid-rows-1 grid-cols-4">
+                                    <input  class="select-all col-span-3 appearance-none relative block w-full my-4 px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                            type="text" id="pass" name="cpass" placeholder="Password">
+                                    <div class="flex flex-col item-center justify-center">
+                                        <button id="p-generate" class="col-start-4 w-full h-10 flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium bg-indigo-500 text-white bg-gradient-to-r hover:from-pink-500  hover:to-yellow-500"
+                                                type="button">Generate</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <%if(message.msg && code === 1) {%>
+                            <div class="row-start-6 col-span-4 text-red-500"><%-message.msg%></div>
+                            <%}%>
+                            <%if(message.msg && code === 0) {%>
+                            <div class="row-start-6 col-span-4 text-green-500"><%-message.msg%></div>
+                            <%}%>
+                            <div class="  col-start-4">
+                                <button class=" w-full h-10 flex items-center justify-center py-2 px-4 border border-transparent text-sm font-medium text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+                                        type="submit">Create</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
